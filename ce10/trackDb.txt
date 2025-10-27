@@ -1,0 +1,75 @@
+track H3K4me3_signal
+type bigWig
+shortLabel H3K4me3
+longLabel H3K4me3 signal (YA, RPKM)
+bigDataUrl H3K4me3.RPKM.bw
+visibility full
+autoScale on
+color 255,0,0
+priority 1
+
+track H3K4me1_signal
+type bigWig
+shortLabel H3K4me1
+longLabel H3K4me1 signal (YA, RPKM)
+bigDataUrl H3K4me1.RPKM.bw
+visibility full
+autoScale on
+color 255,165,0
+priority 2
+
+track H3K36me3_signal
+type bigWig
+shortLabel H3K36me3
+longLabel H3K36me3 signal (YA, RPKM)
+bigDataUrl H3K36me3.RPKM.bw
+visibility full
+autoScale on
+color 0,0,255
+priority 3
+
+track H3K27me3_signal
+type bigWig
+shortLabel H3K27me3
+longLabel H3K27me3 signal (YA, RPKM)
+bigDataUrl H3K27me3.RPKM.bw
+visibility full
+autoScale on
+color 34,139,34
+priority 4
+
+track H3K4me3_peaks
+type bed 5
+shortLabel H3K4me3 peaks
+longLabel H3K4me3 MACS3 peaks (YA)
+bigDataUrl H3K4me3_peaks.bed
+visibility dense
+itemRgb off
+priority 5
+
+track H3K4me1_peaks
+type bed 5
+shortLabel H3K4me1 peaks
+longLabel H3K4me1 MACS3 peaks (YA)
+bigDataUrl H3K4me1_peaks.bed
+visibility dense
+itemRgb off
+priority 6
+
+track H3K36me3_peaks
+type bed 5
+shortLabel H3K36me3 peaks
+longLabel H3K36me3 MACS3 peaks (YA)
+bigDataUrl H3K36me3_peaks.bed
+visibility dense
+itemRgb off
+priority 7
+
+track H3K27me3_peaks
+type bed 5
+shortLabel H3K27me3 peaks
+longLabel H3K27me3 MACS3 peaks (YA)
+bigDataUrl H3K27me3_peaks.bed
+visibility dense
+itemRgb off
+priority 8

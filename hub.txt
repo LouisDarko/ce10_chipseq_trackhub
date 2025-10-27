@@ -1,0 +1,5 @@
+hub louis_YA_chipseq
+shortLabel Louis YA ChIP-seq
+longLabel C. elegans young adult histone marks (GSE114440). MACS3 peaks, RPKM bigWigs.
+genomesFile genomes.txt
+email you@example.com
