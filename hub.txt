@@ -1,5 +1,5 @@
-hub louis_YA_chipseq
-shortLabel Louis YA ChIP-seq
-longLabel C. elegans young adult histone marks (GSE114440). MACS3 peaks, RPKM bigWigs.
+hub ce10_chipseq
+shortLabel C. elegans ChIP-seq Hub
+longLabel Histone modification ChIP-seq tracks for C. elegans (ce10)
 genomesFile genomes.txt
-email you@example.com
+email louisdarko@example.com
