@@ -1,16 +1,44 @@
-track H3K4me3_signal
-bigDataUrl H3K4me3.RPKM.bw
-shortLabel H3K4me3
-longLabel H3K4me3 Histone Mark Signal
-type bigWig
+# Container for signals
+track HistoneSignals
+compositeTrack on
+shortLabel Histone signals (ce10)
+longLabel ChIP-seq histone mark signals (ce10)
+configurable on
 visibility full
-maxHeightPixels 100:32:8
+type bigWig 0 1000
+maxHeightPixels 100:60:8
+autoScale on
 priority 1
 
-track H3K4me3_peaks
-bigDataUrl H3K4me3_peaks.sorted.bed
-shortLabel H3K4me3 Peaks
-longLabel H3K4me3 peak regions
-type bed 3
-visibility dense
-priority 2
+# Children
+track H3K4me3_signal
+parent HistoneSignals on
+shortLabel H3K4me3
+longLabel H3K4me3 ChIP-seq signal (ce10)
+type bigWig
+color 255,0,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce10_chipseq_trackhub/main/ce10/H3K4me3.RPKM.bw
+
+track H3K4me1_signal
+parent HistoneSignals on
+shortLabel H3K4me1
+longLabel H3K4me1 ChIP-seq signal (ce10)
+type bigWig
+color 255,165,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce10_chipseq_trackhub/main/ce10/H3K4me1.RPKM.bw
+
+track H3K27me3_signal
+parent HistoneSignals on
+shortLabel H3K27me3
+longLabel H3K27me3 ChIP-seq signal (ce10)
+type bigWig
+color 0,0,255
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce10_chipseq_trackhub/main/ce10/H3K27me3.RPKM.bw
+
+track H3K36me3_signal
+parent HistoneSignals on
+shortLabel H3K36me3
+longLabel H3K36me3 ChIP-seq signal (ce10)
+type bigWig
+color 0,128,0
+bigDataUrl https://raw.githubusercontent.com/LouisDarko/ce10_chipseq_trackhub/main/ce10/H3K36me3.RPKM.bw
