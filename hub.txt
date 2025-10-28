@@ -1,5 +1,5 @@
-hub ce10_chipseq
-shortLabel C. elegans ChIP-seq Hub
-longLabel Histone modification ChIP-seq tracks for C. elegans (ce11)
+hub ce10_histone_hub
+shortLabel ce10 histone hub
+longLabel C. elegans (ce10) histone ChIP-seq peaks and signals
 genomesFile genomes.txt
-email louisdarko@example.com
+email louisdarko20@gmail.com
